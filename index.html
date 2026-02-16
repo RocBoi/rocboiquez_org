@@ -1,43 +1,57 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />  <!-- SEO -->  <title>RocBoi Quez on TIDAL | Official Artist Hub</title>
+  <meta name="robots" content="index, follow" />
+  <title>RocBoi Quez on TIDAL | Official Artist Hub</title>
   <meta name="description" content="Official RocBoi Quez website. Stream the full RocBoi Quez catalog exclusively on TIDAL. Underground Atlanta hip-hop, chopped not slopped, DJ-ready." />
-  <link rel="canonical" href="https://www.rocboiquez.info/" />  <!-- Open Graph -->  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.rocboiquez.info/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
   <meta property="og:title" content="RocBoi Quez on TIDAL" />
-  <meta property="og:description" content="Stream RocBoi Quez exclusively on TIDAL. Official artist hub." />  <style>
+  <meta property="og:description" content="Stream RocBoi Quez exclusively on TIDAL. Official artist hub." />
+  <meta property="og:image" content="IMG_0511_small.jpeg" />
+
+  <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: "Inter", Arial, sans-serif;
-      background: #050007;
       color: #ffffff;
       line-height: 1.6;
+      background: url('IMG_0511_small.jpeg') no-repeat center center fixed;
+      background-size: cover;
     }
+
     header {
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
+      background: rgba(5, 0, 7, 0.85); /* dark overlay for readability */
       border-bottom: 1px solid rgba(255,255,255,.08);
     }
     header h1 { font-size: 3rem; font-weight: 700; }
-    header p { opacity: .85; margin-top: 10px; }
+    header p { opacity: .85; margin-top: 10px; font-size:1.2rem;}
 
     .container {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 60px 20px;
+      padding: 80px 20px;
+      background: rgba(5,0,7,0.7);
+      border-radius: 12px;
     }
 
     .section-title {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
+      font-size: 2rem;
+      margin-bottom: 30px;
       text-align: center;
+      font-weight: 600;
     }
 
     .tidal-embed {
       margin: 40px auto;
       max-width: 900px;
-      background: #0d0d0d;
+      background: rgba(13,13,13,0.9);
       padding: 20px;
       border-radius: 12px;
       border: 1px solid #1f1f1f;
@@ -57,171 +71,116 @@
 
     .cta a {
       display: inline-block;
-      padding: 14px 36px;
+      padding: 16px 40px;
       background: #6a0dad;
       color: #fff;
       border-radius: 8px;
       text-decoration: none;
       font-weight: 600;
+      font-size:1.1rem;
+      transition: background 0.3s ease;
     }
 
     .cta a:hover { background: #520080; }
 
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 40px 20px;
       font-size: .85rem;
       opacity: .6;
       border-top: 1px solid rgba(255,255,255,.06);
     }
+
+    /* subtle merch placeholder overlay if desired */
+    .merch-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('IMG_0511_small.jpeg') no-repeat center center;
+      background-size: cover;
+      opacity: 0.08;
+      z-index: -1;
+    }
   </style>
-  
+
+  <!-- Structured Data: MusicGroup -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MusicGroup",
-  "@id": "https://www.rocboiquez.info/#musicgroup",
-  "name": "RocBoi Quez",
-  "alternateName": "Roc Boi Quez",
-  "url": "https://www.rocboiquez.info",
-  "genre": [
-    "Hip Hop",
-    "Chopped and Screwed",
-    "Southern Hip Hop"
-  ],
-  "foundingLocation": {
-    "@type": "Place",
-    "name": "Atlanta, Georgia, USA"
-  },
-  "sameAs": [
-    "https://tidal.com/browse/artist/19708022/u",
-    "https://www.facebook.com/rocboiquezworld",
-    "https://www.instagram.com/atlquez_"
-  ],
-  "description": "RocBoi Quez is an Atlanta-based hip hop recording artist known for chopped and screwed releases and direct-to-consumer monetization, distributing music exclusively through TIDAL.",
-  "potentialAction": {
-    "@type": "ListenAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://tidal.com/browse/artist/19708022/u",
-      "actionPlatform": [
-        "http://schema.org/DesktopWebPlatform",
-        "http://schema.org/MobileWebPlatform"
-      ]
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "@id": "https://www.rocboiquez.info/#musicgroup",
+    "name": "RocBoi Quez",
+    "alternateName": "Roc Boi Quez",
+    "url": "https://www.rocboiquez.info",
+    "genre": ["Hip Hop", "Chopped and Screwed", "Southern Hip Hop"],
+    "foundingLocation": {
+      "@type": "Place",
+      "name": "Atlanta, Georgia, USA"
+    },
+    "sameAs": [
+      "https://tidal.com/browse/artist/19708022/u",
+      "https://www.facebook.com/rocboiquezworld",
+      "https://www.instagram.com/atlquez_"
+    ],
+    "description": "RocBoi Quez is an Atlanta-based hip hop recording artist known for chopped and screwed releases, distributing music exclusively through TIDAL.",
+    "potentialAction": {
+      "@type": "ListenAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://tidal.com/browse/artist/19708022/u",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
     }
   }
-}
   </script>
+
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MusicAlbum",
-  "@id": "https://www.rocboiquez.info/#purple-edition",
-  "name": "The Purple Edition (Chopped Not Slopped)",
-  "albumProductionType": "StudioAlbum",
-  "albumReleaseType": "AlbumRelease",
-  "genre": [
-    "Hip Hop",
-    "Chopped and Screwed"
-  ],
-  "byArtist": {
-    "@type": "MusicGroup",
-    "name": "RocBoi Quez",
-    "@id": "https://www.rocboiquez.info/#musicgroup"
-  },
-  "url": "https://tidal.com/browse/album/398959455",
-  "sameAs": "https://tidal.com/browse/album/398959455",
-  "datePublished": "2026-01-01",
-  "description": "The Purple Edition is a chopped and screwed album by RocBoi Quez, released exclusively on TIDAL for high-fidelity streaming and direct fan engagement."
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicAlbum",
+    "@id": "https://www.rocboiquez.info/#purple-edition",
+    "name": "The Purple Edition (Chopped Not Slopped)",
+    "albumProductionType": "StudioAlbum",
+    "albumReleaseType": "AlbumRelease",
+    "genre": ["Hip Hop", "Chopped and Screwed"],
+    "byArtist": { "@type": "MusicGroup", "name": "RocBoi Quez" },
+    "url": "https://tidal.com/browse/album/398959455",
+    "sameAs": "https://tidal.com/browse/album/398959455",
+    "datePublished": "2026-01-01",
+    "description": "The Purple Edition is a chopped and screwed album by RocBoi Quez, released exclusively on TIDAL for high-fidelity streaming."
+  }
   </script>
-  <div class="merch-container">
-  <a href="https://rocboi.creator-spring.com/listing/merch-get-out-your-feelings" target="_blank">
-    <img src="IMG_0511_small.jpeg" alt="Get Out Your Feelings Oversized Tee" class="merch-preview">
-  </a>
-  <p>Grab your exclusive RocBoi Quez "Get Out Your Feelings" Oversized Tee!</p>
-  <a href="https://rocboi.creator-spring.com/listing/merch-get-out-your-feelings" class="buy-button" target="_blank">Buy Now</a>
-</div>
-
-<style>
-.merch-container {
-  text-align: center;
-  margin: 30px 0;
-}
-.merch-preview {
-  max-width: 300px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-.merch-preview:hover {
-  transform: scale(1.05);
-}
-.buy-button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 25px;
-  background-color: #ff0055;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-}
-.buy-button:hover {
-  background-color: #e60048;
-}
-</style>
-
-
 </head>
-<body><header>
-  <h1>RocBoi Quez</h1>
-  <p>Official TIDAL Streaming Hub • Atlanta Hip-Hop</p>
-</header><main class="container">  <h2 class="section-title">Stream Exclusively on TIDAL</h2>  <!-- TIDAL Album Embed -->  <div class="tidal-embed">
-    <iframe src="https://embed.tidal.com/albums/398959455"></iframe>
-  </div>  <p style="text-align:center; opacity:.85; max-width:800px; margin:0 auto;">
-    RocBoi Quez delivers raw Atlanta hip-hop, chopped not slopped energy, and DJ-ready releases.
-    This site showcases official releases available exclusively on TIDAL for high-fidelity streaming.
-  </p>  <div class="cta">
-    <a href="https://tidal.com/browse/artist" target="_blank">Open in TIDAL</a>
-  </div></main>
-  <section class="d2c-promo">
-  <div class="d2c-inner">
-    <h3>Own the Music. Don’t Rent It.</h3>
-    <p>
-      Support RocBoi Quez directly. Purchase the exclusive
-      <strong>“Get Out Your Feelings (Chopped Not Slopped)”</strong>
-      and download instantly.
-    </p>
+<body>
+  <div class="merch-bg"></div>
+  <header>
+    <h1>RocBoi Quez</h1>
+    <p>Official TIDAL Streaming Hub • Atlanta Hip-Hop</p>
+  </header>
 
-    <div class="d2c-offer">
-      <span class="price">$3.99</span>
-      <a
-        href="https://www.rocboiquez.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="d2c-btn"
-      >
-        Buy & Download Now
-      </a>
+  <main class="container">
+    <h2 class="section-title">Stream Exclusively on TIDAL</h2>
+    <div class="tidal-embed">
+      <iframe src="https://embed.tidal.com/albums/398959455"></iframe>
     </div>
 
-    <small class="d2c-note">
-      High-quality audio • Direct-to-fan • No subscriptions
-    </small>
-  </div>
-  </section>
-  
+    <p style="text-align:center; opacity:.85; max-width:800px; margin:0 auto;">
+      RocBoi Quez delivers raw Atlanta hip-hop, chopped not slopped energy, and DJ-ready releases.
+      This site showcases official releases available exclusively on TIDAL for high-fidelity streaming.
+    </p>
+
+    <div class="cta">
+      <a href="https://tidal.com/browse/artist/19708022/u" target="_blank">Open in TIDAL</a>
+    </div>
+  </main>
+
   <footer>
-  © 2026 RocBoi Quez • Official TIDAL Artist Platform
-</footer><!-- Structured Data: MusicGroup --><script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MusicGroup",
-  "name": "RocBoi Quez",
-  "genre": ["Hip Hop", "Southern Hip Hop", "Chopped Not Slopped"],
-  "sameAs": [
-    "https://tidal.com/browse/artist"
-  ]
-}
-</script></body>
+    © 2026 RocBoi Quez • Official TIDAL Artist Platform
+  </footer>
+</body>
 </html>
